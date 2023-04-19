@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #eee;
+}
+
+body {
+  background-color: #333;
+  min-height: 100vh;
+  min-width: 360px;
+  padding-bottom: 1vh;
+}
+
+.root {
+  width: 100%;
+  display: flex;
+}
+
+.app {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+.header {
+  text-align: center;
+  margin: 1.1rem;
+}
+
+button {
+  color: black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-row {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem auto;
+}
+
+.form-row p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 9px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) once;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #2b2b33;
+  margin: 0.4rem;
+  padding: 1rem;
+  border-radius: 10%;
+  border: 2px solid rgb(145, 145, 145);
+}
+
+.card h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+
+.card h4 {
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: green;
+}
+.status {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  white-space: pre-wrap;
+}
+
+.btn {
+  background: hsl(200, 100%, 50%, 0.1);
+  border: 1px solid hsl(200, 100%, 50%);
+  color: hsl(200, 100%, 50%);
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: hsl(200, 100%, 50%, 0.2);
+}
+
+.btn.btn-danger {
+  background: hsl(0, 100%, 40%, 0.1);
+  border: 1px solid hsl(0, 100%, 40%);
+  color: hsl(0, 100%, 40%);
+}
+
+.btn.btn-danger:hover,
+.btn.btn-danger:focus-visible {
+  background: hsl(0, 100%, 40%, 0.2);
+}
+
+.btn.btn-sucess {
+  background: hsla(111, 100%, 40%, 0.1);
+  border: 1px solid hsl(114, 100%, 40%);
+  color: hsl(81, 100%, 40%);
+}
+
+.btn.btn-sucess:hover,
+.btn.btn-sucess:focus-visible {
+  background: hsla(114, 100%, 40%, 0.2);
+}
+
+.mb {
+  margin: 5px 33px;
+}
+
+.big{
+    margin-top: 3rem;
+    transform: scale(1.3);
+}
